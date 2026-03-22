@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CSDL Ph\u00E2n T\u00E1n\\HRManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F365BFD3-178E-4719-87CD-68A25A0CCC56}|HRManagement.API\\HRManagement.API.csproj|d:\\csdl ph\u00E2n t\u00E1n\\hrmanagement\\hrmanagement.api\\middleware\\roleauthmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F365BFD3-178E-4719-87CD-68A25A0CCC56}|HRManagement.API\\HRManagement.API.csproj|solutionrelative:hrmanagement.api\\middleware\\roleauthmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F365BFD3-178E-4719-87CD-68A25A0CCC56}|HRManagement.API\\HRManagement.API.csproj|d:\\csdl ph\u00E2n t\u00E1n\\hrmanagement\\hrmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F365BFD3-178E-4719-87CD-68A25A0CCC56}|HRManagement.API\\HRManagement.API.csproj|solutionrelative:hrmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoleAuthMiddleware.cs",
+              "DocumentMoniker": "D:\\CSDL Ph\u00E2n T\u00E1n\\HRManagement\\HRManagement.API\\Middleware\\RoleAuthMiddleware.cs",
+              "RelativeDocumentMoniker": "HRManagement.API\\Middleware\\RoleAuthMiddleware.cs",
+              "ToolTip": "D:\\CSDL Ph\u00E2n T\u00E1n\\HRManagement\\HRManagement.API\\Middleware\\RoleAuthMiddleware.cs",
+              "RelativeToolTip": "HRManagement.API\\Middleware\\RoleAuthMiddleware.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T10:07:15.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CSDL Ph\u00E2n T\u00E1n\\HRManagement\\HRManagement.API\\Program.cs",
+              "RelativeDocumentMoniker": "HRManagement.API\\Program.cs",
+              "ToolTip": "D:\\CSDL Ph\u00E2n T\u00E1n\\HRManagement\\HRManagement.API\\Program.cs",
+              "RelativeToolTip": "HRManagement.API\\Program.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAwF4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T10:03:54.199Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

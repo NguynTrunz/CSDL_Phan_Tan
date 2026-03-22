@@ -1,0 +1,15 @@
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\bin\Debug\net8.0\HRManagement.DAL.deps.json
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\bin\Debug\net8.0\HRManagement.DAL.dll
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\bin\Debug\net8.0\HRManagement.DAL.pdb
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\bin\Debug\net8.0\HRManagement.Models.dll
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\bin\Debug\net8.0\HRManagement.Models.pdb
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\obj\Debug\net8.0\HRManagement.DAL.csproj.AssemblyReference.cache
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\obj\Debug\net8.0\HRManagement.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\obj\Debug\net8.0\HRManagement.DAL.AssemblyInfoInputs.cache
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\obj\Debug\net8.0\HRManagement.DAL.AssemblyInfo.cs
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\obj\Debug\net8.0\HRManagement.DAL.csproj.CoreCompileInputs.cache
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\obj\Debug\net8.0\HRManage.1CDC9253.Up2Date
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\obj\Debug\net8.0\HRManagement.DAL.dll
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\obj\Debug\net8.0\refint\HRManagement.DAL.dll
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\obj\Debug\net8.0\HRManagement.DAL.pdb
+D:\CSDL Phân Tán\HRManagement\HRManagement.DAL\obj\Debug\net8.0\ref\HRManagement.DAL.dll
