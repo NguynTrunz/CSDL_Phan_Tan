@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"R88qs3i+5lzLymS09J3V2cyc9OsZOzWnKwtjo08OvaI=","Source":"HRManagement.API","BasePath":"_content/HRManagement.API","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "u/bMonF+LVHk+tOc5W0oiQ9bxuuFZZa10rDbKZb1Yf0=",
+  "Source": "HRManagement.API",
+  "BasePath": "_content/HRManagement.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

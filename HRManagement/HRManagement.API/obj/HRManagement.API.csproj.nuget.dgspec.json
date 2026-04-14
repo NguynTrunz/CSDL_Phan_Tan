@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.API\\HRManagement.API.csproj": {}
+    "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.API\\HRManagement.API.csproj": {}
   },
   "projects": {
-    "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.API\\HRManagement.API.csproj": {
+    "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.API\\HRManagement.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.API\\HRManagement.API.csproj",
+        "projectUniqueName": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.API\\HRManagement.API.csproj",
         "projectName": "HRManagement.API",
-        "projectPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.API\\HRManagement.API.csproj",
-        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.API\\obj\\",
+        "projectPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.API\\HRManagement.API.csproj",
+        "packagesPath": "C:\\Users\\Vuong\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,20 +26,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.BLL\\HRManagement.BLL.csproj": {
-                "projectPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.BLL\\HRManagement.BLL.csproj"
+              "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.BLL\\HRManagement.BLL.csproj": {
+                "projectPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.BLL\\HRManagement.BLL.csproj"
               },
-              "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj": {
-                "projectPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj"
+              "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj": {
+                "projectPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj"
               },
-              "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj": {
-                "projectPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj"
+              "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj": {
+                "projectPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj"
               }
             }
           }
@@ -53,8 +54,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -88,24 +88,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.419/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.BLL\\HRManagement.BLL.csproj": {
+    "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.BLL\\HRManagement.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.BLL\\HRManagement.BLL.csproj",
+        "projectUniqueName": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.BLL\\HRManagement.BLL.csproj",
         "projectName": "HRManagement.BLL",
-        "projectPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.BLL\\HRManagement.BLL.csproj",
-        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.BLL\\obj\\",
+        "projectPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.BLL\\HRManagement.BLL.csproj",
+        "packagesPath": "C:\\Users\\Vuong\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -114,17 +114,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj": {
-                "projectPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj"
+              "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj": {
+                "projectPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj"
               },
-              "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj": {
-                "projectPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj"
+              "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj": {
+                "projectPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj"
               }
             }
           }
@@ -138,8 +139,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -160,24 +160,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.419/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj": {
+    "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj",
+        "projectUniqueName": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj",
         "projectName": "HRManagement.DAL",
-        "projectPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj",
-        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.DAL\\obj\\",
+        "projectPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.DAL\\HRManagement.DAL.csproj",
+        "packagesPath": "C:\\Users\\Vuong\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -186,14 +186,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj": {
-                "projectPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj"
+              "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj": {
+                "projectPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj"
               }
             }
           }
@@ -207,8 +208,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -242,24 +242,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.419/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj": {
+    "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj",
+        "projectUniqueName": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj",
         "projectName": "HRManagement.Models",
-        "projectPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj",
-        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "D:\\CSDL Phân Tán\\HRManagement\\HRManagement.Models\\obj\\",
+        "projectPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.Models\\HRManagement.Models.csproj",
+        "packagesPath": "C:\\Users\\Vuong\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\CSDL_Phan_Tan\\HRManagement\\HRManagement.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -268,6 +268,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -285,8 +286,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -307,7 +307,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.419/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

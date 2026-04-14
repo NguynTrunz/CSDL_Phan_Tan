@@ -63,7 +63,7 @@ namespace HRManagement.API.Controllers
 
             try
             {
-                await _service.CapNhatLuongAsync(maNV, request);
+                await _service.CapNhatLuongAsync(maNV, request, role);
                 return Ok(new { message = $"Cập nhật lương nhân viên {maNV} thành công." });
             }
             catch (ArgumentException ex) { return BadRequest(new { message = ex.Message }); }
