@@ -79,35 +79,38 @@ namespace HRManagement.DAL.Repositories
         // SP định nghĩa: @MaNV, @LuongMoi, @HeSoMoi, @PhuCapMoi, @SoTaiKhoanMoi
         // Admin truyền SoTaiKhoan = null → SP giữ nguyên giá trị cũ KHÔNG được, phải xử lý
         // → Dùng ISNULL trong SP hoặc truyền giá trị cũ. Cách đơn giản: nếu null thì lấy giá trị hiện tại
-        public async Task CapNhatLuongAsync(string maNV, CapNhatLuongRequest req)
+        public async Task CapNhatLuongAsync(string maNV, CapNhatLuongRequest req, string? role = null)
         {
-            // Nếu Admin không truyền SoTaiKhoan → lấy giá trị cũ để không bị ghi đè thành NULL
-            string? soTaiKhoan = req.SoTaiKhoan;
-            if (soTaiKhoan == null)
-            {
-                // Lấy SoTaiKhoan hiện tại
-                const string sqlGet = "SELECT SoTaiKhoan FROM NhanVien_Luong WHERE MaNV = @MaNV";
-                await using var connGet = _factory.GetPayrollAdminConnection();
-                await connGet.OpenAsync();
-                await using var cmdGet = new SqlCommand(sqlGet, connGet);
-                cmdGet.Parameters.AddWithValue("@MaNV", maNV);
-                var val = await cmdGet.ExecuteScalarAsync();
-                soTaiKhoan = val == DBNull.Value ? null : val?.ToString();
-            }
+            if (string.IsNullOrWhiteSpace(role))
+                throw new UnauthorizedAccessException("Thiếu role để cập nhật lương.");
 
-            await using var conn = _factory.GetPayrollAdminConnection();
+            if (role != "Admin" && role != "KeToan")
+                throw new UnauthorizedAccessException($"Role '{role}' không có quyền cập nhật lương.");
+
+            await using var conn = role == "Admin"
+                ? _factory.GetPayrollAdminConnection()
+                : _factory.GetPayrollKeToanConnection();
+
             await conn.OpenAsync();
-            await using var cmd = new SqlCommand("sp_UpdateLuong", conn)
+
+            var procedureName = role == "Admin"
+                ? "sp_Admin_UpdateLuong"
+                : "sp_KeToan_UpdateLuong";
+
+            await using var cmd = new SqlCommand(procedureName, conn)
             {
                 CommandType = System.Data.CommandType.StoredProcedure
             };
 
-            // Đúng thứ tự theo SP: @MaNV, @LuongMoi, @HeSoMoi, @PhuCapMoi, @SoTaiKhoanMoi
             cmd.Parameters.AddWithValue("@MaNV", maNV);
             cmd.Parameters.AddWithValue("@LuongMoi", req.LuongCoBan);
             cmd.Parameters.AddWithValue("@HeSoMoi", req.HeSo);
             cmd.Parameters.AddWithValue("@PhuCapMoi", req.PhuCap);
-            cmd.Parameters.AddWithValue("@SoTaiKhoanMoi", soTaiKhoan ?? (object)DBNull.Value);
+
+            if (role == "KeToan")
+            {
+                cmd.Parameters.AddWithValue("@SoTaiKhoanMoi", req.SoTaiKhoan ?? (object)DBNull.Value);
+            }
 
             await cmd.ExecuteNonQueryAsync();
         }

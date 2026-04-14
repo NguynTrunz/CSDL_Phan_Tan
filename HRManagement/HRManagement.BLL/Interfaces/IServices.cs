@@ -26,6 +26,7 @@ namespace HRManagement.BLL.Interfaces
 
         Task<NhanVienKeToan?> GetLuongByIdAsync(string maNV);
 
-        Task CapNhatLuongAsync(string maNV, CapNhatLuongRequest request);
+        // Task CapNhatLuongAsync(string maNV, CapNhatLuongRequest request);
+        Task CapNhatLuongAsync(string maNV, CapNhatLuongRequest req, string? role = null);
     }
 }
