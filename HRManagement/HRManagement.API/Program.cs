@@ -5,12 +5,39 @@ using HRManagement.DAL;
 using HRManagement.DAL.Interfaces;
 using HRManagement.DAL.Repositories;
 using Microsoft.Data.SqlClient;
+using Microsoft.OpenApi.Models; // for X-Role appearance in Swagger.
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// builder.Services.AddSwaggerGen();
+// Adding X-Role to Swagger.
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("X-Role", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Name = "X-Role",
+        Type = SecuritySchemeType.ApiKey,
+        Description = "Nhập role: Admin, IT, hoặc KeToan"
+    });
+
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "X-Role"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
 
 // DAL
 builder.Services.AddSingleton<DbConnectionFactory>();
@@ -25,7 +52,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReact", policy =>
     {
-        policy.WithOrigins("http://localhost:5173")
+        policy.WithOrigins("http://localhost:5173", "http://localhost:5075")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -47,7 +74,7 @@ app.MapPost("/api/auth/login", async (LoginRequest req, IConfiguration config) =
     if (string.IsNullOrWhiteSpace(req.Username) || string.IsNullOrWhiteSpace(req.Password))
         return Results.BadRequest(new { success = false, message = "Vui lòng nhập đầy đủ tài khoản và mật khẩu." });
 
-    var server = config["DbServer"] ?? "LAPTOP-A300C5H8\\SQLEXPRESS";
+    var server = config["DbServer"] ?? "localhost\\SQLEXPRESS";
 
     // Chọn DB để test kết nối dựa vào tên login
     string testDb = req.Username.ToLower().Contains("ketoan") ? "DB_Payroll" : "DB_Personnel";
@@ -67,10 +94,13 @@ app.MapPost("/api/auth/login", async (LoginRequest req, IConfiguration config) =
         await using var conn = new SqlConnection(connStr);
         await conn.OpenAsync(); // Sai credentials → throw SqlException
     }
-    catch (SqlException)
+    catch (SqlException ex)
     {
-        return Results.Json(new { success = false, message = "Sai tài khoản hoặc mật khẩu." },
-            statusCode: 401);
+        return Results.Json(new
+        {
+            success = false,
+            message = ex.Message
+        }, statusCode: 500);
     }
     catch (Exception ex)
     {
